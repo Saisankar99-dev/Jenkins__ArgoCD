@@ -1,0 +1,15 @@
+# Number of replicas
+replicaCount: 2
+
+# Image settings
+image:
+  repository: saisankar99/ultimate-cicd
+  tag: "1"
+  pullPolicy: IfNotPresent
+
+# Service settings
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+  
